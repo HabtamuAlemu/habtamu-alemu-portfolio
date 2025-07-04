@@ -1,0 +1,918 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habtamu Alemu Abdi - IT Professional Portfolio</title>
+    <meta name="description" content="Portfolio of Habtamu Alemu Abdi - Information Technology Graduate from Jimma University" />
+    <meta name="author" content="Habtamu Alemu Abdi" />
+
+    <meta property="og:title" content="Habtamu Alemu Abdi - IT Professional Portfolio" />
+    <meta property="og:description" content="Portfolio of Habtamu Alemu Abdi - Information Technology Graduate from Jimma University" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/profile-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/profile-image.png" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Header -->
+        <header id="header" class="header">
+            <nav class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <span>Habtamu Alemu</span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu desktop-menu">
+                        <button class="nav-link" data-section="about">About</button>
+                        <button class="nav-link" data-section="education">Education</button>
+                        <button class="nav-link" data-section="skills">Skills</button>
+                        <button class="nav-link" data-section="projects">Projects</button>
+                        <button class="nav-link" data-section="training">Training</button>
+                        <button class="nav-link" data-section="contact">Contact</button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <button class="nav-link mobile-nav-link" data-section="about">About</button>
+                    <button class="nav-link mobile-nav-link" data-section="education">Education</button>
+                    <button class="nav-link mobile-nav-link" data-section="skills">Skills</button>
+                    <button class="nav-link mobile-nav-link" data-section="projects">Projects</button>
+                    <button class="nav-link mobile-nav-link" data-section="training">Training</button>
+                    <button class="nav-link mobile-nav-link" data-section="contact">Contact</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title fade-in">
+                            Habtamu Alemu
+                            <span class="hero-title-accent">Abdi</span>
+                        </h1>
+                        <p class="hero-subtitle fade-in-delay-1">
+                            Information Technology Professional
+                        </p>
+                        <p class="hero-description fade-in-delay-2">
+                            B.Sc. Graduate in Information Technology from Jimma University with expertise in web development, 
+                            database management, and software engineering.
+                        </p>
+                        <div class="hero-buttons fade-in-delay-3">
+                            <button class="btn btn-primary" data-section="about">
+                                Learn More About Me
+                            </button>
+                            <a href="mailto:qalu112233@gmail.com" class="btn btn-outline">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image fade-in-delay-4">
+                        <div class="image-container">
+                            <img src="image.png" alt="Habtamu Alemu Abdi" class="profile-image">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="personal-info">
+                        <h3 class="subsection-title">Personal Information</h3>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h4 class="info-label">Full Name</h4>
+                                <p class="info-value">Habtamu Alemu Abdi</p>
+                            </div>
+                            <div class="info-card">
+                                <h4 class="info-label">Date of Birth</h4>
+                                <p class="info-value">February 13, 1994</p>
+                            </div>
+                            <div class="info-card">
+                                <h4 class="info-label">Nationality</h4>
+                                <p class="info-value">Ethiopian</p>
+                            </div>
+                            <div class="info-card">
+                                <h4 class="info-label">Location</h4>
+                                <p class="info-value">Gelan, Oromia, Ethiopia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="language-skills">
+                        <h3 class="subsection-title">Language Skills</h3>
+                        <div class="language-list">
+                            <div class="language-card">
+                                <h4 class="language-name">Amharic</h4>
+                                <div class="language-skills-grid">
+                                    <div class="skill-item">
+                                        <span class="skill-label">Speaking:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Writing:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="language-card">
+                                <h4 class="language-name">Afaan Oromo</h4>
+                                <div class="language-skills-grid">
+                                    <div class="skill-item">
+                                        <span class="skill-label">Speaking:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Writing:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="language-card">
+                                <h4 class="language-name">English</h4>
+                                <div class="language-skills-grid">
+                                    <div class="skill-item">
+                                        <span class="skill-label">Speaking:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Writing:</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-skills">
+                    <h3 class="subsection-title">Social Skills & Personal Qualities</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-users skill-icon"></i>
+                            <h4 class="skill-name">Team Work</h4>
+                            <p class="skill-description">Excellent collaboration and team leadership skills</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-clock skill-icon"></i>
+                            <h4 class="skill-name">Time Management</h4>
+                            <p class="skill-description">Can work effectively under pressure and tight deadlines</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-comments skill-icon"></i>
+                            <h4 class="skill-name">Communication</h4>
+                            <p class="skill-description">Excellent communication with diverse groups</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-lightbulb skill-icon"></i>
+                            <h4 class="skill-name">Creativity</h4>
+                            <p class="skill-description">Innovative problem-solving approach</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-heart skill-icon"></i>
+                            <h4 class="skill-name">Loyalty</h4>
+                            <p class="skill-description">Committed and dedicated to excellence</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-globe skill-icon"></i>
+                            <h4 class="skill-name">Cultural Adaptability</h4>
+                            <p class="skill-description">Experience with multicultural teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Educational Background</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="education-info">
+                                    <h3 class="education-level">Higher Education</h3>
+                                    <h4 class="education-institution">Jimma University</h4>
+                                    <p class="education-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Jimma, Oromia, Ethiopia
+                                    </p>
+                                    <p class="education-period">
+                                        <i class="fas fa-calendar"></i>
+                                        2014-2017
+                                    </p>
+                                    <p class="education-qualification">B.Sc. Degree in Information Technology</p>
+                                    <p class="education-cgpa">CGPA: 3.64</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="education-info">
+                                    <h3 class="education-level">Secondary Education</h3>
+                                    <h4 class="education-institution">Gelan Secondary and Preparatory School</h4>
+                                    <p class="education-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Gelan, Oromia, Ethiopia
+                                    </p>
+                                    <p class="education-period">
+                                        <i class="fas fa-calendar"></i>
+                                        2010-2013
+                                    </p>
+                                    <p class="education-qualification">Grade 9-12</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="education-info">
+                                    <h3 class="education-level">Elementary Education</h3>
+                                    <h4 class="education-institution">Kiltu Kare Elementary School</h4>
+                                    <p class="education-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Gelan, Oromia, Ethiopia
+                                    </p>
+                                    <p class="education-period">
+                                        <i class="fas fa-calendar"></i>
+                                        2001-2009
+                                    </p>
+                                    <p class="education-qualification">Grade 1-8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-content">
+                    <div class="technical-skills">
+                        <h3 class="subsection-title">Programming & Technical Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-category">Web Development</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="90"></div>
+                                </div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-category">Web Development</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="75"></div>
+                                </div>
+                                <div class="skill-percentage">75%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-category">Web Development</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="70"></div>
+                                </div>
+                                <div class="skill-percentage">70%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-category">Backend Development</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="65"></div>
+                                </div>
+                                <div class="skill-percentage">65%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-category">Programming</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="70"></div>
+                                </div>
+                                <div class="skill-percentage">70%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-category">Programming</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="65"></div>
+                                </div>
+                                <div class="skill-percentage">65%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-category">Programming</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="60"></div>
+                                </div>
+                                <div class="skill-percentage">60%</div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft SQL Server</span>
+                                    <span class="skill-category">Database</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" data-width="80"></div>
+                                </div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="software-skills">
+                        <h3 class="subsection-title">Software & Tools</h3>
+                        <div class="software-list">
+                            <div class="software-item">
+                                <i class="fas fa-check-circle"></i>
+                                Microsoft Office Suite (Word, PowerPoint, Excel)
+                            </div>
+                            <div class="software-item">
+                                <i class="fas fa-check-circle"></i>
+                                Microsoft Visual Studio
+                            </div>
+                            <div class="software-item">
+                                <i class="fas fa-check-circle"></i>
+                                Microsoft Visio
+                            </div>
+                            <div class="software-item">
+                                <i class="fas fa-check-circle"></i>
+                                CISCO Packet Tracer
+                            </div>
+                            <div class="software-item">
+                                <i class="fas fa-check-circle"></i>
+                                Windows Operating Systems (7, 8, 8.1, 10)
+                            </div>
+                        </div>
+
+                        <div class="interests">
+                            <h4 class="interests-title">Areas of Interest</h4>
+                            <div class="interest-tags">
+                                <span class="interest-tag">Web Development</span>
+                                <span class="interest-tag">Database Management</span>
+                                <span class="interest-tag">Software Engineering</span>
+                                <span class="interest-tag">Network Security</span>
+                                <span class="interest-tag">System Administration</span>
+                                <span class="interest-tag">E-Learning Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Project</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="project-title">High School E-Learning and Examination System</h3>
+                            <p class="project-subtitle">Final Year Project - Jimma University</p>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-info">
+                                <div class="info-section">
+                                    <h4 class="info-title">
+                                        <i class="fas fa-bullseye"></i>
+                                        Project Objective
+                                    </h4>
+                                    <p class="info-description">
+                                        Developed a comprehensive e-learning platform for Jimma City Education Office 
+                                        to digitize high school education and examination processes, improving accessibility 
+                                        and efficiency in the education system.
+                                    </p>
+                                </div>
+
+                                <div class="info-section">
+                                    <h4 class="info-title">
+                                        <i class="fas fa-cogs"></i>
+                                        Technologies Used
+                                    </h4>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">PHP</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-features">
+                                <h4 class="features-title">
+                                    <i class="fas fa-star"></i>
+                                    Key Features & Achievements
+                                </h4>
+                                <div class="features-grid">
+                                    <div class="feature-list">
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Online course management system
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Digital examination platform
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Student progress tracking
+                                        </div>
+                                    </div>
+                                    <div class="feature-list">
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Teacher dashboard and tools
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Automated grading system
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-check"></i>
+                                            Report generation features
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-footer">
+                                <p class="project-description">
+                                    This project demonstrates my ability to develop comprehensive educational software solutions 
+                                    and work collaboratively on large-scale systems.
+                                </p>
+                                <div class="project-status">
+                                    <i class="fas fa-trophy"></i>
+                                    Successfully completed and implemented
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="section training-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Training & Certifications</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Continuous learning and professional development through recognized certification programs
+                    </p>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Graphics Design</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Certificate of Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Huawei Seeds for the Future Program 2023-2024</h3>
+                            <p class="cert-provider">Huawei Seeds for the Future</p>
+                            <p class="cert-type">Certificate of Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Computer Hardware Basics</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Certificate of Course Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-digital-tachograph"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Digital Awareness</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Statement of Achievement</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Cyber Threat Management</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Certificate of Course Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Network Defense</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Certificate of Course Completion</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Endpoint Security</h3>
+                            <p class="cert-provider">Cisco Networking Academy</p>
+                            <p class="cert-type">Certificate</p>
+                        </div>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Programming Fundamentals</h3>
+                            <p class="cert-provider">Udacity</p>
+                            <p class="cert-type">Nanodegree Program Completion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-summary">
+                    <h3 class="summary-title">Professional Development Focus</h3>
+                    <p class="summary-description">
+                        My commitment to continuous learning is demonstrated through these comprehensive certification programs, 
+                        covering areas from cybersecurity and network management to programming and digital literacy.
+                    </p>
+                    <div class="focus-areas">
+                        <span class="focus-tag">Cybersecurity</span>
+                        <span class="focus-tag">Network Administration</span>
+                        <span class="focus-tag">Programming</span>
+                        <span class="focus-tag">Digital Design</span>
+                        <span class="focus-tag">Hardware Systems</span>
+                        <span class="focus-tag">Cloud Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Let's connect and discuss opportunities in Information Technology
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Email</h4>
+                                    <a href="mailto:qalu112233@gmail.com" class="contact-link">
+                                        qalu112233@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Phone</h4>
+                                    <a href="tel:+251943185636" class="contact-link">
+                                        +251 943 185 636
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Location</h4>
+                                    <p class="contact-text">Gelan, Oromia, Ethiopia</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Status</h4>
+                                    <p class="contact-text">Available for opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="professional-interests">
+                        <h3 class="contact-title">Professional Interests</h3>
+                        <div class="interests-card">
+                            <h4 class="interests-subtitle">What I'm Looking For</h4>
+                            <div class="interests-list">
+                                <div class="interest-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Full-time Software Development positions
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Web Development projects
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Database Administration roles
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    IT Consulting opportunities
+                                </div>
+                                <div class="interest-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Collaboration on educational technology projects
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="personal-interests-card">
+                            <h4 class="interests-subtitle">Personal Interests</h4>
+                            <p class="interests-description">
+                                I enjoy reading through different sources and constantly learning new technologies. 
+                                I'm passionate about contributing to community development through technology.
+                            </p>
+                            <div class="personal-tags">
+                                <span class="personal-tag">Reading</span>
+                                <span class="personal-tag">Learning</span>
+                                <span class="personal-tag">Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="references">
+                    <h3 class="references-title">Professional References</h3>
+                    <div class="references-grid">
+                        <div class="reference-card">
+                            <div class="reference-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4 class="reference-name">Mr. Zerihun Olana</h4>
+                            <p class="reference-title">M.Tech, MA, Assistant Professor</p>
+                            <div class="reference-details">
+                                <p><strong>Position:</strong> Head of Department, Department of Information Technology</p>
+                                <p><strong>Organization:</strong> Faculty of Computing and Informatics, Jimma University</p>
+                                <p><strong>Location:</strong> Jimma, Ethiopia</p>
+                                <p><strong>Email:</strong> <a href="mailto:zerihun.olana@ju.edu.et">zerihun.olana@ju.edu.et</a></p>
+                                <p><strong>Mobile:</strong> +251-912-45-53-76</p>
+                            </div>
+                        </div>
+
+                        <div class="reference-card">
+                            <div class="reference-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4 class="reference-name">Mr. Admas Abtewu</h4>
+                            <p class="reference-title">M.Tech, MA, Assistant Professor</p>
+                            <div class="reference-details">
+                                <p><strong>Position:</strong> Department of Information Technology</p>
+                                <p><strong>Organization:</strong> Jimma University</p>
+                                <p><strong>Location:</strong> Jimma, Ethiopia</p>
+                                <p><strong>Email:</strong> <a href="mailto:admes0922@gmail.com">admes0922@gmail.com</a></p>
+                                <p><strong>Mobile:</strong> +251-912-49-91-02, +251-917-02-03-80</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Habtamu Alemu Abdi</h3>
+                        <p class="footer-description">
+                            Information Technology Professional passionate about creating innovative solutions 
+                            and contributing to technological advancement in Ethiopia.
+                        </p>
+                        <div class="footer-social">
+                            <a href="mailto:qalu112233@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+251943185636" class="social-link">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Quick Links</h4>
+                        <div class="footer-links">
+                            <button class="footer-link" data-section="about">About</button>
+                            <button class="footer-link" data-section="education">Education</button>
+                            <button class="footer-link" data-section="skills">Skills</button>
+                            <button class="footer-link" data-section="projects">Projects</button>
+                            <button class="footer-link" data-section="training">Training</button>
+                            <button class="footer-link" data-section="contact">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">Skills Highlight</h4>
+                        <div class="footer-skills">
+                            <span class="footer-skill">HTML</span>
+                            <span class="footer-skill">CSS</span>
+                            <span class="footer-skill">JavaScript</span>
+                            <span class="footer-skill">PHP</span>
+                            <span class="footer-skill">Java</span>
+                            <span class="footer-skill">SQL Server</span>
+                            <span class="footer-skill">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p class="footer-copyright">
+                            © <span id="current-year"></span> Habtamu Alemu Abdi. All rights reserved.
+                        </p>
+                        <div class="footer-badge">
+                            <i class="fas fa-heart"></i>
+                            Made with passion for technology
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-declaration">
+                    <p class="declaration-text">
+                        "I hereby declare that the above-furnished details are true and correct to the best of my knowledge and belief."
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
