@@ -1,3 +1,13 @@
+// CV Download Function
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = './cv_habtamu_alemu.pdf';
+    link.download = 'cv_habtamu_alemu.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // DOM Elements
 const loadingScreen = document.getElementById('loading-screen');
 const mainContent = document.getElementById('main-content');
@@ -150,7 +160,7 @@ function animateSkillBars() {
 
 // Smooth scrolling for anchor links
 document.addEventListener('click', function(event) {
-    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+    if (event.target.tagName === 'A' && event.target.getAttribute('href') && event.target.getAttribute('href').startsWith('#')) {
         event.preventDefault();
         const targetId = event.target.getAttribute('href').substring(1);
         scrollToSection(targetId);
@@ -232,3 +242,4 @@ function lazyLoadImages() {
 console.log('🚀 Portfolio website loaded successfully!');
 console.log('💼 Habtamu Alemu Abdi - IT Professional');
 console.log('📧 Contact: qalu112233@gmail.com');
+console.log('📄 CV Download functionality is ready!');

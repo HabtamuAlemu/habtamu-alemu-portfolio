@@ -46,6 +46,10 @@
                         <button class="nav-link" data-section="projects">Projects</button>
                         <button class="nav-link" data-section="training">Training</button>
                         <button class="nav-link" data-section="contact">Contact</button>
+                        <button class="cv-download-btn" onclick="downloadCV()">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </button>
                     </div>
 
                     <!-- Mobile Menu Button -->
@@ -62,6 +66,10 @@
                     <button class="nav-link mobile-nav-link" data-section="projects">Projects</button>
                     <button class="nav-link mobile-nav-link" data-section="training">Training</button>
                     <button class="nav-link mobile-nav-link" data-section="contact">Contact</button>
+                    <button class="cv-download-btn mobile" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
                 </div>
             </nav>
         </header>
@@ -89,11 +97,15 @@
                             <a href="mailto:qalu112233@gmail.com" class="btn btn-outline">
                                 Get In Touch
                             </a>
+                            <button class="btn btn-secondary" onclick="downloadCV()">
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </button>
                         </div>
                     </div>
                     <div class="hero-image fade-in-delay-4">
                         <div class="image-container">
-                            <img src="image.png" alt="Habtamu Alemu Abdi" class="profile-image">
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Habtamu Alemu Abdi" class="profile-image">
                             <div class="image-glow"></div>
                         </div>
                     </div>
@@ -114,18 +126,22 @@
                         <h3 class="subsection-title">Personal Information</h3>
                         <div class="info-grid">
                             <div class="info-card">
+                                <i class="fas fa-user info-icon"></i>
                                 <h4 class="info-label">Full Name</h4>
                                 <p class="info-value">Habtamu Alemu Abdi</p>
                             </div>
                             <div class="info-card">
+                                <i class="fas fa-calendar info-icon"></i>
                                 <h4 class="info-label">Date of Birth</h4>
                                 <p class="info-value">February 13, 1994</p>
                             </div>
                             <div class="info-card">
+                                <i class="fas fa-globe info-icon"></i>
                                 <h4 class="info-label">Nationality</h4>
                                 <p class="info-value">Ethiopian</p>
                             </div>
                             <div class="info-card">
+                                <i class="fas fa-map-marker-alt info-icon"></i>
                                 <h4 class="info-label">Location</h4>
                                 <p class="info-value">Gelan, Oromia, Ethiopia</p>
                             </div>
@@ -873,6 +889,18 @@
                                     <p class="contact-text">Available for opportunities</p>
                                 </div>
                             </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Resume</h4>
+                                    <button class="contact-link cv-download-link" onclick="downloadCV()">
+                                        Download CV
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -973,6 +1001,9 @@
                             <a href="tel:+251943185636" class="social-link">
                                 <i class="fas fa-phone"></i>
                             </a>
+                            <button class="social-link" onclick="downloadCV()">
+                                <i class="fas fa-download"></i>
+                            </button>
                         </div>
                     </div>
 
