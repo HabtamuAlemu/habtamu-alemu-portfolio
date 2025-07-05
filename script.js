@@ -40,14 +40,14 @@ const certificateData = {
     'digital-awareness': {
         title: 'Digital Awareness',
         provider: 'Cisco Networking Academy',
-        image: './digital_awareness.png',
-        downloadUrl: './digital_awareness.png'
+        image: './digital_awarenes.png',
+        downloadUrl: './digital_awarenes.png'
     },
     'cyber-threat': {
         title: 'Cyber Threat Management',
         provider: 'Cisco Networking Academy',
         image: './cyber_threat_management.png',
-        downloadUrl: './cyber_threat_management.png'
+        downloadUrl: './cyber_threat_managment.png'
     },
     'endpoint-security': {
         title: 'Endpoint Security',
@@ -64,8 +64,8 @@ const certificateData = {
     'huawei-seeds': {
         title: 'Huawei Seeds for the Future Program 2023-2024',
         provider: 'Huawei Seeds for the Future',
-        image: './Huwaie_Seed_for_the_future.jpg',
-        downloadUrl: './Huwaie_Seed_for_the_future.jpg'
+        image: './Huwaie Seed for the future.jpg',
+        downloadUrl: './Huwaie Seed for the future.jpg'
     },
     'network-defense': {
         title: 'Network Defense',
