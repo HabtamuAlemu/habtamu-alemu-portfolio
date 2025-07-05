@@ -15,6 +15,77 @@ const header = document.getElementById('header');
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const currentYearSpan = document.getElementById('current-year');
+const certificateModal = document.getElementById('certificate-modal');
+
+// Certificate data with actual file names
+const certificateData = {
+    'ai-fundamentals': {
+        title: 'Artificial Intelligence Fundamentals',
+        provider: 'Cisco Networking Academy',
+        image: './AI.png',
+        downloadUrl: './AI.png'
+    },
+    'android-fundamentals': {
+        title: 'Android Developer Fundamentals',
+        provider: 'Cisco Networking Academy',
+        image: './Android_fundamental.png',
+        downloadUrl: './Android_fundamental.png'
+    },
+    'computer-hardware': {
+        title: 'Computer Hardware Basics',
+        provider: 'Cisco Networking Academy',
+        image: './computer_hardware.png',
+        downloadUrl: './computer_hardware.png'
+    },
+    'digital-awareness': {
+        title: 'Digital Awareness',
+        provider: 'Cisco Networking Academy',
+        image: './digital_awareness.png',
+        downloadUrl: './digital_awareness.png'
+    },
+    'cyber-threat': {
+        title: 'Cyber Threat Management',
+        provider: 'Cisco Networking Academy',
+        image: './cyber_threat_management.png',
+        downloadUrl: './cyber_threat_management.png'
+    },
+    'endpoint-security': {
+        title: 'Endpoint Security',
+        provider: 'Cisco Networking Academy',
+        image: './Endpoint_security.png',
+        downloadUrl: './Endpoint_security.png'
+    },
+    'graphics-design': {
+        title: 'Graphics Design',
+        provider: 'Cisco Networking Academy',
+        image: './Graphics_Design.jpg',
+        downloadUrl: './Graphics_Design.jpg'
+    },
+    'huawei-seeds': {
+        title: 'Huawei Seeds for the Future Program 2023-2024',
+        provider: 'Huawei Seeds for the Future',
+        image: './Huwaie_Seed_for_the_future.jpg',
+        downloadUrl: './Huwaie_Seed_for_the_future.jpg'
+    },
+    'network-defense': {
+        title: 'Network Defense',
+        provider: 'Cisco Networking Academy',
+        image: './Network_defence.png',
+        downloadUrl: './Network_defence.png'
+    },
+    'programming-fundamentals': {
+        title: 'Programming Fundamentals',
+        provider: 'Udacity',
+        image: './Programming_fundamental.png',
+        downloadUrl: './Programming_fundamental.png'
+    },
+    'data-analysis': {
+        title: 'Data Analysis Fundamentals',
+        provider: 'Cisco Networking Academy',
+        image: './Data_analysis.png',
+        downloadUrl: './Data_analysis.png'
+    }
+};
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,6 +229,83 @@ function animateSkillBars() {
     });
 }
 
+// Certificate Modal Functions
+function openCertificate(certId) {
+    const cert = certificateData[certId];
+    if (!cert) return;
+    
+    // Update modal content
+    document.getElementById('modal-title').textContent = cert.title;
+    document.getElementById('modal-provider').textContent = cert.provider;
+    
+    // Show certificate image
+    const certificateImage = document.getElementById('certificate-image');
+    const certificatePlaceholder = document.getElementById('certificate-placeholder');
+    
+    if (cert.image) {
+        certificateImage.src = cert.image;
+        certificateImage.style.display = 'block';
+        certificatePlaceholder.style.display = 'none';
+        
+        // Handle image load error
+        certificateImage.onerror = function() {
+            certificateImage.style.display = 'none';
+            certificatePlaceholder.style.display = 'block';
+        };
+    } else {
+        certificateImage.style.display = 'none';
+        certificatePlaceholder.style.display = 'block';
+    }
+    
+    // Store current certificate for download
+    certificateModal.dataset.currentCert = certId;
+    
+    // Show modal with animation
+    certificateModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Add click outside to close
+    certificateModal.addEventListener('click', handleModalClick);
+}
+
+function closeCertificate() {
+    certificateModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+    
+    // Remove click outside handler
+    certificateModal.removeEventListener('click', handleModalClick);
+}
+
+function handleModalClick(event) {
+    if (event.target === certificateModal || event.target.classList.contains('modal-overlay')) {
+        closeCertificate();
+    }
+}
+
+function downloadCertificate() {
+    const certId = certificateModal.dataset.currentCert;
+    const cert = certificateData[certId];
+    
+    if (cert && cert.downloadUrl) {
+        const link = document.createElement('a');
+        link.href = cert.downloadUrl;
+        link.download = `${cert.title.replace(/\s+/g, '_')}_Certificate`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        // Show a message that certificate download is not available
+        alert('Certificate download is not available at the moment. Please contact for a copy.');
+    }
+}
+
+// Keyboard support for modal
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && certificateModal.classList.contains('active')) {
+        closeCertificate();
+    }
+});
+
 // Smooth scrolling for anchor links
 document.addEventListener('click', function(event) {
     if (event.target.tagName === 'A' && event.target.getAttribute('href') && event.target.getAttribute('href').startsWith('#')) {
@@ -197,6 +345,11 @@ window.addEventListener('resize', function() {
     if (window.innerWidth >= 768 && mobileMenu.classList.contains('active')) {
         toggleMobileMenu();
     }
+    
+    // Close modal on small screens if needed
+    if (window.innerWidth < 640 && certificateModal.classList.contains('active')) {
+        // Adjust modal for mobile if needed
+    }
 });
 
 // Keyboard navigation
@@ -235,11 +388,9 @@ function lazyLoadImages() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-// Initialize lazy loading if needed
-// lazyLoadImages();
-
 // Console message for developers
 console.log('🚀 Portfolio website loaded successfully!');
 console.log('💼 Habtamu Alemu Abdi - IT Professional');
 console.log('📧 Contact: qalu112233@gmail.com');
 console.log('📄 CV Download functionality is ready!');
+console.log('🏆 Certificate viewer functionality activated!');
