@@ -801,9 +801,10 @@ body {
     background: white;
 }
 
-.project-container {
-    max-width: 64rem;
-    margin: 0 auto;
+.projects-grid {
+    display: grid;
+    gap: 3rem;
+    max-width: 100%;
 }
 
 .project-card {
@@ -964,6 +965,12 @@ body {
     
     .features-grid {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
