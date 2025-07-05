@@ -46,7 +46,7 @@ const certificateData = {
     'cyber-threat': {
         title: 'Cyber Threat Management',
         provider: 'Cisco Networking Academy',
-        image: './cyber_threat_management.png',
+        image: './cyber_threat_managment.png',
         downloadUrl: './cyber_threat_managment.png'
     },
     'endpoint-security': {
@@ -58,14 +58,14 @@ const certificateData = {
     'graphics-design': {
         title: 'Graphics Design',
         provider: 'Cisco Networking Academy',
-        image: './Graphics_Design.jpg',
-        downloadUrl: './Graphics_Design.jpg'
+        image: './Graphics Design.jpg',
+        downloadUrl: './Graphics Design.jpg'
     },
     'huawei-seeds': {
         title: 'Huawei Seeds for the Future Program 2023-2024',
         provider: 'Huawei Seeds for the Future',
-        image: './Huwaie Seed for the future.jpg',
-        downloadUrl: './Huwaie Seed for the future.jpg'
+        image: './Huwaie Seed for the feture.jpg',
+        downloadUrl: './Huwaie Seed for the feture.jpg'
     },
     'network-defense': {
         title: 'Network Defense',
